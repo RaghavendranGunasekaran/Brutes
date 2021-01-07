@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "702472758018",
+    "firebase_url": "https://brutes-7c63d.firebaseio.com",
+    "project_id": "brutes-7c63d",
+    "storage_bucket": "brutes-7c63d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702472758018:android:405867d39db24b5f73d81b",
+        "android_client_info": {
+          "package_name": "com.raghav.brutes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702472758018-o81kqqrgnjn01bc3s37oumke6fr4kfsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raghav.brutes",
+            "certificate_hash": "aedee4d49f0e3cbbcef635e5918f53c00d1e8183"
+          }
+        },
+        {
+          "client_id": "702472758018-7md32sktq2jd1cucbi7jeiva7lbhv9d6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-pOMornSgpsoFPFmELgWh2lyfqGb84eA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702472758018-7md32sktq2jd1cucbi7jeiva7lbhv9d6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/f_q_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/forest" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#63000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/f_q_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/f_q_image"
+        app:layout_constraintTop_toTopOf="@+id/f_q_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/f_q_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:fontFamily="@font/crete_round_italic"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:lineSpacingExtra="8dp"
+        android:text="You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. Water can drip and it can crash. Become like water my friend."
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.052"
+        tools:targetApi="lollipop"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@mipmap/quote_icon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="- Bruce Lee"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginRight="@dimen/size_20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/f_q_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f_q_text"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/lee"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/f_q_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/f_q_image"
+        app:layout_constraintVertical_bias="0.231" />
+
+
+        <com.nambimobile.widgets.efab.ExpandableFabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <com.nambimobile.widgets.efab.Overlay
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <com.nambimobile.widgets.efab.ExpandableFab
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="30dp"
+                app:efab_color="#E91E63"
+                app:label_position="right"
+                app:label_elevation="6dp"
+                app:efab_openingAnimationDurationMs="450"
+                app:efab_closingAnimationDurationMs="500"
+                app:efab_icon="@mipmap/quote_icon"
+                app:label_backgroundColor="#000" />
+
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/f_copy_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="option1Clicked"
+                app:fab_color="#E91E63"
+                app:label_position="right"
+                app:label_text="Copy"
+                app:fab_icon="@drawable/copy_icon" />
+
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/f_share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:fab_color="#E91E63"
+                app:label_text="Share"
+                app:label_position="right"
+                app:fab_icon="@drawable/share_icon" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/f_wallpaper_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="#E91E63"
+                app:label_text="Set as wallpaper"
+                app:label_position="right"
+                app:fab_icon="@drawable/image_icon" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/f_about_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="#E91E63"
+                app:label_text="About app"
+                app:label_position="right"
+                app:fab_icon="@drawable/info_icon" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_quote_like"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="end"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <com.like.LikeButton
+                    android:id="@+id/f_star_button"
+                    app:like_drawable="@drawable/ic_favorite_red"
+                    app:unlike_drawable="@drawable/ic_favorite_white"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:circle_start_color="#E91E63"
+                    app:circle_end_color="#FFFFFF"
+                    app:icon_size="50dp"
+                    app:dots_primary_color="#E91E63"
+                    app:dots_secondary_color="#FFFFFF"
+                    app:icon_type="heart"
+                    app:anim_scale_factor="2"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/left_arrow_icon"
+                android:layout_marginTop="20dp"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Favourites"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/size_20sp"
+
+                />
+
+        </com.nambimobile.widgets.efab.ExpandableFabLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
